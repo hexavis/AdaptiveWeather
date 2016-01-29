@@ -23,7 +23,27 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svo-Pi-VG9" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-Tq-U5o">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOC-b4-PfL">
+                                        <rect key="frame" x="73" y="58" width="454" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.41960784313725491" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bOC-b4-PfL" firstAttribute="centerX" secondItem="Svo-Pi-VG9" secondAttribute="centerX" id="4e3-Zx-EwI"/>
+                                    <constraint firstAttribute="bottom" secondItem="bOC-b4-PfL" secondAttribute="bottom" constant="10" id="W3A-U9-iio"/>
+                                    <constraint firstItem="Auf-Tq-U5o" firstAttribute="centerX" secondItem="Svo-Pi-VG9" secondAttribute="centerX" id="fEL-vx-2Um"/>
+                                    <constraint firstItem="Auf-Tq-U5o" firstAttribute="top" secondItem="Svo-Pi-VG9" secondAttribute="top" constant="10" id="fLf-lT-E9a"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.2196078431372549" green="0.59215686274509804" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
