@@ -18,21 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ULd-FR-u9y">
-                                <rect key="frame" x="150" y="20" width="300" height="197"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svo-Pi-VG9" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-Tq-U5o">
-                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOC-b4-PfL">
                                         <rect key="frame" x="73" y="58" width="454" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-Tq-U5o">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -45,17 +42,48 @@
                                     <constraint firstItem="Auf-Tq-U5o" firstAttribute="top" secondItem="Svo-Pi-VG9" secondAttribute="top" constant="10" id="fLf-lT-E9a"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ULd-FR-u9y">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2196078431372549" green="0.59215686274509804" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ULd-FR-u9y" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="1i0-qS-hFl"/>
                             <constraint firstItem="ULd-FR-u9y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Km-fc-Yvt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Svo-Pi-VG9" secondAttribute="bottom" id="7z8-yz-cbh"/>
+                            <constraint firstItem="Svo-Pi-VG9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="B42-a4-v4d"/>
+                            <constraint firstItem="ULd-FR-u9y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Ksp-Aj-ow8"/>
                             <constraint firstItem="Svo-Pi-VG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SHX-fC-HNm"/>
+                            <constraint firstItem="ULd-FR-u9y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="U4D-sF-f8q"/>
                             <constraint firstAttribute="trailing" secondItem="Svo-Pi-VG9" secondAttribute="trailing" id="c3v-9P-7Pq"/>
+                            <constraint firstItem="Svo-Pi-VG9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d5v-vR-np2"/>
                             <constraint firstItem="Svo-Pi-VG9" firstAttribute="top" secondItem="ULd-FR-u9y" secondAttribute="bottom" constant="20" id="j8s-4W-CZ9"/>
                             <constraint firstItem="ULd-FR-u9y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="o6C-o3-9Ec"/>
+                            <constraint firstItem="ULd-FR-u9y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="saT-UP-ALl"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ksp-Aj-ow8"/>
+                                <exclude reference="U4D-sF-f8q"/>
+                                <exclude reference="saT-UP-ALl"/>
+                                <exclude reference="B42-a4-v4d"/>
+                                <exclude reference="d5v-vR-np2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="1i0-qS-hFl"/>
+                                <exclude reference="3Km-fc-Yvt"/>
+                                <include reference="Ksp-Aj-ow8"/>
+                                <include reference="U4D-sF-f8q"/>
+                                <exclude reference="o6C-o3-9Ec"/>
+                                <include reference="saT-UP-ALl"/>
+                                <include reference="B42-a4-v4d"/>
+                                <exclude reference="SHX-fC-HNm"/>
+                                <include reference="d5v-vR-np2"/>
+                                <exclude reference="j8s-4W-CZ9"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
