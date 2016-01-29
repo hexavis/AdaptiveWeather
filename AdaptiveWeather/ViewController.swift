@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewControll/Users/student/Desktop/AdaptiveWeather/AdaptiveWeather/Base.lproj/Main.storyboarder {
 
     override func viewDidLoad() {
         super.viewDidLoad()
